@@ -15,3 +15,8 @@ services:
       DB_CLIENT: "sqlite3"
       DB_FILENAME: "/directus/database/data.db"
       WEBSOCKETS_ENABLED: "true"
+      CORS_ENABLED: "true" # Habilitar CORS
+      CORS_ORIGIN: "http://localhost:3000" # Permitir requisições de localhost:3000
+      CORS_METHODS: "GET,POST,PATCH,DELETE,OPTIONS" # Métodos permitidos
+      CORS_HEADERS: "Content-Type,Authorization,Accept" # Cabeçalhos permitidos
+      CORS_CREDENTIALS: "true" # Se necessário, habilitar credenciais
